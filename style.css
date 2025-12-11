@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background: wheat;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #222;
+    color: white;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    transition: transform 0.3s ease;
+}
+header img:hover {
+    transform: scale(1.05);
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color:azure;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s;
+}
+.container:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+h2 {
+    color: #333;
+    margin-top: 25px;
+    font-size: 1.4em;
+}
+
+/* Skills */
+.skills span {
+    display: inline-block;
+    height: 20px;
+    margin: 5px;
+    padding: 6px 10px;
+    background: #222;
+    color: wheat;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+.skills span img {
+    /* Style for the icon */
+    height: 1em; /* Makes the icon size match the font size */
+    width: 1em;
+    vertical-align: middle; /* Aligns icon with text */
+    margin-right: 5px; /* Adds a little space between icon and text */
+}
+.skills span:hover {
+    background: #444;
+    transform: scale(1.1);
+}
+
+/* Projects */
+.projects li {
+    padding: 5px 0;
+    transition: 0.3s;
+}
+.projects li:hover {
+    color: #555;
+    transform: translateX(5px);
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.gallery img {
+    width: 160px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Video Section */
+.video-section iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 340px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    display: block;
+    margin: 0 auto;
+    align-self: right;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: #222;
+    color: white;
+    font-size: 14px;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1.2s ease;
+}
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);} 
+    to {opacity: 1; transform: translateY(0);} 
+}
+
+.slide-down {
+    animation: slideDown 1.3s ease;
+}
+@keyframes slideDown {
+    from {opacity: 0; transform: translateY(-20px);} 
+    to {opacity: 1; transform: translateY(0);} 
+}
